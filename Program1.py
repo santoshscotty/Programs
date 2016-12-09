@@ -11,14 +11,15 @@ def ADD(b):
             if a.index(val)!=0:
                 a[a.index(val)-1]=val
         a[-1]=b
+    print 'Added'
 def GET(b=0):
-    global a#=list(a)
+    global a
     if b<NoOfVersions:
-        print 'key '+a[(b*(-1))-1]
+        print 'Output:\nkey '+a[(b*(-1))-1]
     else:
         print 'Invalid Version Specified'
 def DELETE():
-    global a#=list(a)
+    global a
     a=list()
     print 'All Versions are Deleted'
 x=''
@@ -39,6 +40,7 @@ while x!='0':
     elif x==3:
         DELETE()
     elif x==4:
+        print 'Output:'
         for y in a:
             print y
     else:
